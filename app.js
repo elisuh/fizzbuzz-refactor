@@ -16,6 +16,6 @@ function count() {
     document.getElementById("list").innerHTML = "Buzz";
   }
   else {
-    document.innerHTML = i;
+    document.getElementById("list").innerHTML = i;
   }
 }
