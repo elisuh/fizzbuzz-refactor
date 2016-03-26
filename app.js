@@ -22,5 +22,5 @@ function fizzBuzz(number) {
 function getValue() {
 	var value = prompt("Please enter a number from 1 to 100.");
 	value = parseInt(value);
-	fizzBuzz(value);
+	return fizzBuzz(value);
 }
