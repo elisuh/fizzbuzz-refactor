@@ -1,11 +1,6 @@
 'use strict'
 
-function getValue() {
-	var value = prompt("Please enter a number from 1 to 100.");
-	value = parseInt(value);
-	fizzBuzz(value);
-}
-
+// fizzbuzz loop
 function fizzBuzz(number) {
    for (var i = 1; i <= number; i++) {
    if (i%15 === 0) {
@@ -20,4 +15,12 @@ function fizzBuzz(number) {
   else {
     document.getElementById("list").innerHTML = i;
   }
+}
+
+// prompt user for value, validate and pass through fizzbuzz function
+
+function getValue() {
+	var value = prompt("Please enter a number from 1 to 100.");
+	value = parseInt(value);
+	fizzBuzz(value);
 }
