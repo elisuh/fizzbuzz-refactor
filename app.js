@@ -1,19 +1,13 @@
 'use strict'
 
-var i = prompt("Please enter a number from 1 to 100.");
-
-function convert() {
-	var i = +"i";
-	return i
+function getValue() {
+	var value = prompt("Please enter a number from 1 to 100.");
+	value = parseInt(value);
+	fizzBuzz(value);
 }
 
-function check() {
-	var i = parseInt("i");
-	return i
-}
-
-function count() {
-   for (var i = 1; i <= 100; i++) {
+function fizzBuzz(number) {
+   for (var i = 1; i <= number; i++) {
    if (i%15 === 0) {
     document.getElementById("list").innerHTML = "FizzBuzz";
    }
