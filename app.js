@@ -1,4 +1,3 @@
-'use strict'
 
 // fizzbuzz loop
 function fizzBuzz(number) {
