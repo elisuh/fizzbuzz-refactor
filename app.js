@@ -1,6 +1,10 @@
-var popup = prompt("Please enter a number from 1 to 100.");
+var i = prompt("Please enter a number from 1 to 100.");
 
-if (popup != null) {
+function convert() {
+	var i = +"i";
+}
+
+function count() {
    for (var i = 1; i <= 100; i++) {
    if (i%15 === 0) {
     document.getElementById("list").innerHTML = "FizzBuzz";
@@ -14,5 +18,4 @@ if (popup != null) {
   else {
     document.innerHTML = i;
   }
-}
 }
