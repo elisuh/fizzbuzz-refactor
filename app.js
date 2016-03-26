@@ -1,11 +1,13 @@
-var value = prompt("Please enter a number from 1 to 100.");
+var i = prompt("Please enter a number from 1 to 100.");
 
 function convert() {
-	var value = +"i";
+	var i = +"i";
+	return i
 }
 
 function check() {
 	var i = parseInt("i");
+	return i
 }
 
 function count() {
