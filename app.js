@@ -1,3 +1,5 @@
+'use strict'
+
 var i = prompt("Please enter a number from 1 to 100.");
 
 function convert() {
