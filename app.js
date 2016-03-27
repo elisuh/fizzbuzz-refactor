@@ -6,7 +6,6 @@ function getValue() {
 	var value = prompt("Please enter a number from 1 to 100.");
 	value = parseInt(value);
 	return value;
-	console.log("Is dis working?");
 }
 
 // fizzbuzz loop
@@ -32,18 +31,18 @@ function fizzBuzz() {
 }
 
 // check for decimals
-    while(value%1 != 0) {
-      value = prompt("No decimals allowed.");
-      value = +value; //return numeric value
-      if(isNaN(value)) {
-        prompt("Please enter a whole number!"); // none of that NaN funny business.
-      }
-    }
+  //  while(value%1 != 0) {
+   //   value = prompt("No decimals allowed.");
+   //   value = +value; //return numeric value
+   //   if(isNaN(value)) {
+   //     prompt("Please enter a whole number!"); // none of that NaN funny business.
+   //   }
+   // }
 
 // make sure string isn't empty
     while(value === "") {
       value = prompt("Please type something.");
-      value = +value;
+      value = +value; //return number
     } 
 
 //run functions
