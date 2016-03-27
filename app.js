@@ -3,12 +3,11 @@ var value
 
 // prompt user for value, convert string to number, check for decimals and empty string
 function getValue() {
-	var value = prompt("Please enter a number from 1 to 100.");
+	value = prompt("Please enter a number from 1 to 100.");
 	value = parseInt(value);
 	while(value === "") { // make sure string isn't empty
       value = prompt("Please type something.");
       value = +value; //return number
-    } 
     while(value%1 != 0) { // check for decimal
 		value = prompt("Please enter a whole number, 1-100.");
  		value = +value; //return number
