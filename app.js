@@ -1,16 +1,27 @@
 // a variable is born
 var value
 
-// prompt user for value, convert string to number
+// prompt user for value, convert string to number, check for decimals and empty string
 function getValue() {
 	var value = prompt("Please enter a number from 1 to 100.");
 	value = parseInt(value);
+	 while(value === "") { // make sure string isn't empty
+      value = prompt("Please type something.");
+      value = +value; //return number
+    } 
+    while(value%1 != 0) {
+		value = prompt("Please enter a whole number, 1-100.");
+ 		value = +value; //return numeber
+		if(isNaN(value)) {
+		prompt("Please enter a whole number!"); // none of that NaN funny business.
+      }
+   }
 	return value;
 }
 
 // fizzbuzz loop
-function fizzBuzz() {
-   for (var i = 1; i <= 100; i++) {
+function fizzBuzz(num) {
+   for (var i = 1; i <= num; i++) {
    if (i%15 === 0) {
     document.getElementById("list").innerHTML += "FizzBuzz<br>";
     console.log("fizzbuzz");
@@ -29,21 +40,6 @@ function fizzBuzz() {
   }
 }
 }
-
-// check for decimals
-  //  while(value%1 != 0) {
-   //   value = prompt("No decimals allowed.");
-   //   value = +value; //return numeric value
-   //   if(isNaN(value)) {
-   //     prompt("Please enter a whole number!"); // none of that NaN funny business.
-   //   }
-   // }
-
-// make sure string isn't empty
-    while(value === "") {
-      value = prompt("Please type something.");
-      value = +value; //return number
-    } 
 
 //run functions
   value = getValue();
