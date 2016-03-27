@@ -1,6 +1,4 @@
-var value
-
-// prompt user for value, convert from string
+// prompt user for value, convert string to number
 
 function getValue() {
 	var value = prompt("Please enter a number from 1 to 100.");
@@ -24,7 +22,8 @@ function fizzBuzz() {
     document.getElementById("list").innerHTML = i;
   }
 }
-// checks for decimals
+
+// check for decimals
     while(value%1 != 0) {
       value = prompt("No decimals allowed");
       value = +value;
@@ -33,7 +32,7 @@ function fizzBuzz() {
       }
     }
 
-    //Make sure string isn't empty
+// make sure string isn't empty
     while(value === "") {
       value = prompt("Please type Something");
       value = +value;
