@@ -26,6 +26,7 @@ function fizzBuzz() {
     console.log(i);
   }
 }
+}
 
 // check for decimals
     while(value%1 != 0) {
