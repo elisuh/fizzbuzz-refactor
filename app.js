@@ -9,7 +9,7 @@ function getValue() {
       value = prompt("Please type something.");
       value = +value; //return number
     } 
-    while(value%1 != 0) {
+    while(value%1 != 0) { // check for decimal
 		value = prompt("Please enter a whole number, 1-100.");
  		value = +value; //return number
 		if(isNaN(value)) {
