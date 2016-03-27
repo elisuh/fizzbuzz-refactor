@@ -42,7 +42,7 @@ function fizzBuzz() {
 //run functions
   value = getValue();
   fizzBuzz(value);
-  }
+  
 
 
 
