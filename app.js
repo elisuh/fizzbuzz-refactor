@@ -12,19 +12,19 @@ function getValue() {
 function fizzBuzz() {
    for (var i = 1; i <= 100; i++) {
    if (i%15 === 0) {
-    document.getElementById("list").innerHTML += "FizzBuzz";
+    document.getElementById("list").innerHTML += "FizzBuzz<br>";
     console.log("fizzbuzz");
    }
    else if (i%3 === 0) {
-    document.getElementById("list").innerHTML += "Fizz";
+    document.getElementById("list").innerHTML += "Fizz<br>";
     console.log("fizz");
   }
   else if (i%5 === 0) {
-    document.getElementById("list").innerHTML += "Buzz";
+    document.getElementById("list").innerHTML += "Buzz<br>";
     console.log("buzz");
   }
   else {
-    document.getElementById("list").innerHTML += i;
+    document.getElementById("list").innerHTML += i + "<br>";
     console.log(i);
   }
 }
