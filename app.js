@@ -1,7 +1,17 @@
+var value
+
+// prompt user for value, validate 
+
+function getValue() {
+	var value = prompt("Please enter a number from 1 to 100.");
+	value = parseInt(value);
+	return value;
+}
+
 
 // fizzbuzz loop
-function fizzBuzz(number) {
-   for (var i = 1; i <= number; i++) {
+function fizzBuzz() {
+   for (var i = 1; i <= 100; i++) {
    if (i%15 === 0) {
     document.getElementById("list").innerHTML = "FizzBuzz";
    }
@@ -16,10 +26,5 @@ function fizzBuzz(number) {
   }
 }
 
-// prompt user for value, validate and pass through fizzbuzz function
 
-function getValue() {
-	var value = prompt("Please enter a number from 1 to 100.");
-	value = parseInt(value);
-	return fizzBuzz(value);
-}
+
