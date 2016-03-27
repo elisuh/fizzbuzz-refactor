@@ -6,17 +6,17 @@ function getValue() {
 	value = prompt("Please enter a number from 1 to 100.");
 	value = parseInt(value);
 	while(value === "") { // make sure string isn't empty
-      value = prompt("Please type something.");
-      value = +value; //return number
+      		value = prompt("Please type something.");
+  		}
     while(value%1 != 0) { // check for decimal
-		value = prompt("Please enter a whole number, 1-100.");
- 		value = +value; //return number
-		if(isNaN(value)) {
-		prompt("Please enter a whole number!"); // none of that NaN funny business.
-      }
+			value = prompt("No decimals allowed.");
+ 		}
+	if(isNaN(value)) {
+			prompt("That is not a number!"); // none of that NaN funny business.
+      	}
+  }
+      return value;
    }
-	return value;
-}
 
 // fizzbuzz loop
 function fizzBuzz(num) {
