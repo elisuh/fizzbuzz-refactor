@@ -1,13 +1,12 @@
 var value
 
-// prompt user for value, validate 
+// prompt user for value, convert from string
 
 function getValue() {
 	var value = prompt("Please enter a number from 1 to 100.");
 	value = parseInt(value);
 	return value;
 }
-
 
 // fizzbuzz loop
 function fizzBuzz() {
@@ -25,6 +24,28 @@ function fizzBuzz() {
     document.getElementById("list").innerHTML = i;
   }
 }
+// checks for decimals
+    while(value%1 != 0) {
+      value = prompt("No decimals allowed");
+      value = +value;
+      if(isNaN(value)) {
+        prompt("Please enter a whole number!");
+      }
+    }
+
+    //Make sure string isn't empty
+    while(value === "") {
+      value = prompt("Please type Something");
+      value = +value;
+    } 
+
+//run functions
+  value = getValue();
+  fizzBuzz(value);
+  }
+
+
+
 
 
 
