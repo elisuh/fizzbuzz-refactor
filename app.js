@@ -26,7 +26,7 @@ function fizzBuzz() {
 // check for decimals
     while(value%1 != 0) {
       value = prompt("No decimals allowed.");
-      value = +value;
+      value = +value; //return numeric value
       if(isNaN(value)) {
         prompt("Please enter a whole number!");
       }
