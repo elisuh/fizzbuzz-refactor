@@ -1,3 +1,6 @@
+// a variable is born
+var value
+
 // prompt user for value, convert string to number
 function getValue() {
 	var value = prompt("Please enter a number from 1 to 100.");
