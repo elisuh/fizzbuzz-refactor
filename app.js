@@ -8,7 +8,8 @@ function getValue() {
     return value;
    }
 
-function validateValue() { // check that it's a whole number
+// check that it's a whole number
+function validateValue() { 
   	while(value === "") { // make sure string isn't empty
       value = prompt("Please type something.");
   		}
