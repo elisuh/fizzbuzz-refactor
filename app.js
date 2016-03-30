@@ -5,18 +5,21 @@ var value
 function getValue() {
 	value = prompt("Please enter a number from 1 to 100.");
 	value = parseInt(value);
-	while(value === "") { // make sure string isn't empty
-      		value = prompt("Please type something.");
-  		}
-    while(value%1 != 0) { // check for decimal
-			value = prompt("No decimals allowed.");
- 		}
-	if(isNaN(value)) {
-			prompt("That is not a number!"); // none of that NaN funny business.
-      	}
-  }
-      return value;
+    return value;
    }
+
+function validateValue() { // check that it's a whole number
+  	while(value === "") { // make sure string isn't empty
+      value = prompt("Please type something.");
+  		}
+   while(value%1 != 0) { // check for decimal
+		value =	prompt("No decimals allowed.");
+ 		}
+	while(isNaN(value)) {
+		value =	prompt("That is not a number!"); // check for NaN
+      	}
+  return value;
+}
 
 // fizzbuzz loop
 function fizzBuzz(num) {
@@ -42,10 +45,8 @@ function fizzBuzz(num) {
 
 //run functions
   value = getValue();
+  value = validateValue();
   fizzBuzz(value);
-  
-
-
 
 
 
