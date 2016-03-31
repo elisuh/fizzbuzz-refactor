@@ -38,7 +38,7 @@ function fizzBuzz(num) {
 
 //run functions
   var value = validateValue(getValue());
-  fizzBuzz(value);
+  fizzBuzz(value); 
 
 
 
