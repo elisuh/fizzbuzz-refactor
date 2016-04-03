@@ -4,19 +4,24 @@ function getValue(message) {
   if (message) {
     msg = message; // if the user enters something, prompt with the appropriate message from validateValue function
   }
-	return parseInt(prompt(msg)); // pars string, convert from prompt to number
+	return prompt(msg); // return prompt with appropriate message based on value
 }
 
-function validateValue(num) { //check that number is whole
-  if (num === "") { // check for empty string
-    return getValue("Please type something."); // if empty string, pass this message to getValue
-  } else if (num%1 !== 0) { // check for decimals
-    return getValue("No decimals allowed."); // if decimal, pass this message to getValue
-  } else if (isNaN(num)) { // check for NaN
-    return getValue("That is not a number!"); // if NaN, pass this message to getValue
+function validateValue(num) {
+  if (num === "") {
+    return getValue("Please type something."); // check for empty string
+  }
+
+  num = parseFloat(num); // converts string to floating number
+
+  if (isNaN(num)) {
+    return getValue("That is not a number!"); // check for NaN
+  } else if (num%1 !== 0) { 
+    return getValue("No decimals allowed."); // check for decimals
   } else {
     return num; 
   }
+}
 
 // fizzbuzz loop
 function fizzBuzz(num) {
